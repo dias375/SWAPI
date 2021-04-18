@@ -22,8 +22,10 @@ public class Planet {
     private String name;
 
     @Column(name = "CLIMATE")
+    @Enumerated(EnumType.STRING)
     private String climate;
 
     @Column(name = "TERRAIN")
+    @Enumerated(EnumType.STRING)
     private String terrain;
 }
