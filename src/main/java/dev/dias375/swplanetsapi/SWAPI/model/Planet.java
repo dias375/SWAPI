@@ -28,4 +28,7 @@ public class Planet {
     @Column(name = "TERRAIN")
     @Enumerated(EnumType.STRING)
     private Terrain terrain;
+
+    @Column(name = "APPEARANCES")
+    private int appearances;
 }
