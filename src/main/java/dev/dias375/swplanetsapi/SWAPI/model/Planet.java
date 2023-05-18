@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Data
 @AllArgsConstructor
@@ -15,8 +16,8 @@ public class Planet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
-    private long Id;
+    @Column(name = "UUID")
+    private UUID uuid;
 
     @Column(name = "PLANET_NAME")
     private String name;
